@@ -1,0 +1,10 @@
+nst { Client, Collection } = require('discord.js')
+const client = new Client({ intents: 32767 })
+const token = process.env['token']
+
+client.on('ready',() => {
+  console.log('1 am ready')
+})
+
+//logging in the bot
+client.login(token)
